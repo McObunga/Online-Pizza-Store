@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="0" hostname="impetus-462" name="test.com.impetus.pizza.service.UserinfoDAOImplTest" tests="2" time="3.895" timestamp="2012-06-01T08:53:43">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="appserver.lib" value="D:/apache-tomcat-7.0.26/lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/D:/softwares/eclipse-jee-indigo-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/templates/" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="lib" value="WebContent/WEB-INF/lib" />
+    <property name="os.name" value="Windows 7" />
+    <property name="sun.boot.class.path" value="D:\Java\jre7\lib\resources.jar;D:\Java\jre7\lib\rt.jar;D:\Java\jre7\lib\sunrsasign.jar;D:\Java\jre7\lib\jsse.jar;D:\Java\jre7\lib\jce.jar;D:\Java\jre7\lib\charsets.jar;D:\Java\jre7\classes" />
+    <property name="findbugs.home" value="findbugs-1.3.8" />
+    <property name="report" value="D:\TempWork\OnlineShop\report" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="D:\ANT" />
+    <property name="java.runtime.version" value="1.7.0-b147" />
+    <property name="user.name" value="deepak.mundhada" />
+    <property name="tomcat.manager.url" value="http://localhost/manager" />
+    <property name="build.dir" value="build/classes" />
+    <property name="build1.dir" value="D:/apache-tomcat-7.0.26" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="D:\Java\jre7\bin" />
+    <property name="ant.project.default-target" value="main" />
+    <property name="ant.project.name" value="OnlineShop" />
+    <property name="java.version" value="1.7.0" />
+    <property name="user.timezone" value="" />
+    <property name="bin" value="report/bin" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="D:\Java\jre7\lib\endorsed" />
+    <property name="cobertura.cp" value="coverage/moved" />
+    <property name="appserver.home" value="D:/apache-tomcat-7.0.26" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="51.0" />
+    <property name="user.country" value="US" />
+    <property name="value" value="&quot;jdbc:mysql://localhost:3306/sonar?useUnicode=true&amp;amp;characterEncoding=utf8&quot; /&gt;" />
+    <property name="java.home" value="D:\Java\jre7" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="findbug.reports" value="D:\TempWork\OnlineShop\report\findbug_report" />
+    <property name="ant.file" value="D:\TempWork\OnlineShop\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="tomcat.manager.password" value="tomcatnager.password=tomcat" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="21.0-b17" />
+    <property name="dest.path" value="D:\TempWork\OnlineShop\OnlineShop" />
+    <property name="user.variant" value="" />
+    <property name="web.dir" value="WebContent" />
+    <property name="ant.library.dir" value="D:\ANT\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="tomcat.manager.username" value="tomcat" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="user.script" value="" />
+    <property name="&lt;taskdef" value="uri=&quot;antlib:org.sonar.ant&quot; resource=&quot;org/sonar/ant/antlib.xml&quot;&gt;" />
+    <property name="eclipse.pdebuild.scripts" value="/D:/softwares/eclipse-jee-indigo-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/scripts/" />
+    <property name="reports.xml.dir" value="coverage/reports" />
+    <property name="user.home" value="C:\Users\deepak.mundhada" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="src/test/com/impetus/pizza/service" />
+    <property name="java.library.path" value="D:\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/Java/jre7/bin/client;D:/Java/jre7/bin;D:/Java/jre7/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;D:\jdk1.6.0_07\bin;D:\apache-maven-2.2.1\bin;;D:\softwares\eclipse-jee-indigo-win32\eclipse;;." />
+    <property name="name" value="OnlineShop" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.com.impetus.pizza.service.UserinfoDAOImplTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\TempWork\OnlineShop\${test.reports}\TEST-test.com.impetus.pizza.service.UserinfoDAOImplTest.xml crashfile=D:\TempWork\OnlineShop\junitvmwatcher3311776919902130685.properties propsfile=D:\TempWork\OnlineShop\junit2144245749813682169.properties" />
+    <property name="java.class.path" value="D:\TempWork\OnlineShop\coverage\instrumented;D:\TempWork\OnlineShop\report\bin;D:\TempWork\OnlineShop\coverage\moved\antlr-2.7.6.jar;D:\TempWork\OnlineShop\coverage\moved\aopalliance.jar;D:\TempWork\OnlineShop\coverage\moved\asm-3.3.1.jar;D:\TempWork\OnlineShop\coverage\moved\asm-analysis-3.3.1.jar;D:\TempWork\OnlineShop\coverage\moved\asm-attrs.jar;D:\TempWork\OnlineShop\coverage\moved\asm-commons-3.3.1.jar;D:\TempWork\OnlineShop\coverage\moved\asm-tree-3.3.1.jar;D:\TempWork\OnlineShop\coverage\moved\asm-util-3.3.1.jar;D:\TempWork\OnlineShop\coverage\moved\asm-xml-3.3.1.jar;D:\TempWork\OnlineShop\coverage\moved\cglib-2.1.3.jar;D:\TempWork\OnlineShop\coverage\moved\cobertura.jar;D:\TempWork\OnlineShop\coverage\moved\org.springframework.beans-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\coverage\moved\org.springframework.context-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\coverage\moved\org.springframework.core-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\coverage\moved\org.springframework.test-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\coverage\moved\org.springframework.transaction-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\coverage\moved\xalan-2.7.0.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\antlr-2.7.6.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\aopalliance.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\asm-attrs.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\asm-tree-3.3.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\asm.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cglib-2.1.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cobertura.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-beanutils-1.8.0.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-codec-1.5.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-collections-2.1.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-dbcp-1.4.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-digester-2.0.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-fileupload-1.2.2.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-httpclient-3.0.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-io-2.0.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-logging-1.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-pool-1.5.6.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-api-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-common-utilities-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-bindings-soap-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-bindings-xml-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-core-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-databinding-jaxb-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-frontend-jaxrs-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-frontend-jaxws-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-frontend-simple-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-transports-common-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-transports-http-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-ws-addr-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-tools-common-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\dom4j-1.6.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\ehcache-1.2.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\ejb3-persistence.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\hibernate-annotations.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\hibernate-commons-annotations.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\hibernate-entitymanager.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\hibernate-tools.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\hibernate3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\jakarta-oro-2.0.8.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\javassist.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\jcl-over-slf4j-1.5.8.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\jsr311-api-1.1.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\jstl.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\jta.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\junit-4.7.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\log4j-1.2.15.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\mail.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\mysql-connector-java-5.1.6-bin.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\neethi-3.0.2.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.aop-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.asm-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.aspects-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.beans-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.context-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.context.support-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.core-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.expression-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.instrument-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.instrument.tomcat-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.jdbc-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.jms-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.js-2.0.4.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.orm-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.oxm-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.test-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.transaction-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.web-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.web.portlet-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.web.servlet-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.web.struts-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\servlet-api.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\slf4j-api-1.5.8.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\slf4j-jdk14-1.5.8.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\spring-security-config-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\spring-security-core-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\spring-security-taglibs-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\spring-security-web-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\standard.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\wsdl4j-1.6.2.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\xalan-2.7.0.jar;D:\ANT\lib\junit.jar;D:\ANT\lib\ant-launcher.jar;D:\ANT\lib\ant.jar;D:\ANT\lib\ant-junit.jar;D:\ANT\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="java.io.tmpdir" value="C:\Users\DEEPAK~1.MUN\AppData\Local\Temp\" />
+    <property name="eclipse.pdebuild.home" value="/D:/softwares/eclipse-jee-indigo-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/./" />
+    <property name="deploy.path" value="D:/apache-tomcat-7.0.26/webapps" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="instrumented.dir" value="coverage/instrumented" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="os.arch" value="x86" />
+    <property name="&lt;property" value="name=&quot;sonar.host.url&quot; value=&quot;http://localhost:9000&quot; /&gt;" />
+    <property name="java.ext.dirs" value="D:\Java\jre7\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\TempWork\OnlineShop" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="basedir" value="D:\TempWork\OnlineShop" />
+    <property name="ant.file.OnlineShop" value="D:\TempWork\OnlineShop\build.xml" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="D:\ANT\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="ant.file.type.OnlineShop" value="file" />
+    <property name="checkstyle.reports" value="D:\TempWork\OnlineShop\report\checkstyle_report" />
+    <property name="&lt;/taskdef&gt;" value="" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="junit.report" value="D:\TempWork\OnlineShop\report\junit" />
+    <property name="src.dir" value="src" />
+    <property name="ant.project.invoked-targets" value="main" />
+    <property name="&lt;!--" value="SERVER ON A REMOTE HOST --&gt;" />
+    <property name="&lt;classpath" value="path=&quot;path/to/sonar/ant/task/lib&quot; /&gt; " />
+  </properties>
+  <testcase classname="test.com.impetus.pizza.service.UserinfoDAOImplTest" name="testGetUser" time="3.28">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;IngredientDAO&apos;: Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory com.impetus.pizza.persistence.IngredientDAOImpl.sessionFactory; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;sessionFactory&apos; defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: org.objectweb.asm.ClassWriter.&lt;init&gt;(Z)V
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:84)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory com.impetus.pizza.persistence.IngredientDAOImpl.sessionFactory; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;sessionFactory&apos; defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: org.objectweb.asm.ClassWriter.&lt;init&gt;(Z)V
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:502)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:282)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;sessionFactory&apos; defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: org.objectweb.asm.ClassWriter.&lt;init&gt;(Z)V
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:844)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:786)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:703)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:474)
+Caused by: java.lang.NoSuchMethodError: org.objectweb.asm.ClassWriter.&lt;init&gt;(Z)V
+	at net.sf.cglib.core.DebuggingClassWriter.&lt;init&gt;(DebuggingClassWriter.java:47)
+	at net.sf.cglib.core.DefaultGeneratorStrategy.getClassWriter(DefaultGeneratorStrategy.java:30)
+	at net.sf.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:24)
+	at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:216)
+	at net.sf.cglib.core.KeyFactory$Generator.create(KeyFactory.java:145)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:117)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:108)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:104)
+	at net.sf.cglib.proxy.Enhancer.&lt;clinit&gt;(Enhancer.java:69)
+	at org.hibernate.proxy.pojo.cglib.CGLIBLazyInitializer.getProxyFactory(CGLIBLazyInitializer.java:117)
+	at org.hibernate.proxy.pojo.cglib.CGLIBProxyFactory.postInstantiate(CGLIBProxyFactory.java:43)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:162)
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.&lt;init&gt;(AbstractEntityTuplizer.java:135)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.&lt;init&gt;(PojoEntityTuplizer.java:55)
+	at org.hibernate.tuple.entity.EntityEntityModeToTuplizerMapping.&lt;init&gt;(EntityEntityModeToTuplizerMapping.java:56)
+	at org.hibernate.tuple.entity.EntityMetamodel.&lt;init&gt;(EntityMetamodel.java:295)
+	at org.hibernate.persister.entity.AbstractEntityPersister.&lt;init&gt;(AbstractEntityPersister.java:434)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.&lt;init&gt;(SingleTableEntityPersister.java:109)
+	at org.hibernate.persister.PersisterFactory.createClassPersister(PersisterFactory.java:55)
+	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:226)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1294)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:859)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:860)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:779)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+</error>
+  </testcase>
+  <testcase classname="test.com.impetus.pizza.service.UserinfoDAOImplTest" name="testRegisterUser" time="0.508">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;IngredientDAO&apos;: Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory com.impetus.pizza.persistence.IngredientDAOImpl.sessionFactory; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;sessionFactory&apos; defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:84)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory com.impetus.pizza.persistence.IngredientDAOImpl.sessionFactory; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;sessionFactory&apos; defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:502)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:282)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;sessionFactory&apos; defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:844)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:786)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:703)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:474)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+	at org.hibernate.proxy.pojo.cglib.CGLIBLazyInitializer.getProxyFactory(CGLIBLazyInitializer.java:117)
+	at org.hibernate.proxy.pojo.cglib.CGLIBProxyFactory.postInstantiate(CGLIBProxyFactory.java:43)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:162)
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.&lt;init&gt;(AbstractEntityTuplizer.java:135)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.&lt;init&gt;(PojoEntityTuplizer.java:55)
+	at org.hibernate.tuple.entity.EntityEntityModeToTuplizerMapping.&lt;init&gt;(EntityEntityModeToTuplizerMapping.java:56)
+	at org.hibernate.tuple.entity.EntityMetamodel.&lt;init&gt;(EntityMetamodel.java:295)
+	at org.hibernate.persister.entity.AbstractEntityPersister.&lt;init&gt;(AbstractEntityPersister.java:434)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.&lt;init&gt;(SingleTableEntityPersister.java:109)
+	at org.hibernate.persister.PersisterFactory.createClassPersister(PersisterFactory.java:55)
+	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:226)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1294)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:859)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:860)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:779)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+</error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jun 01, 2012 2:23:43 PM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: @TestExecutionListeners is not present for class [class test.com.impetus.pizza.service.UserinfoDAOImplTest]: using defaults.
+Jun 01, 2012 2:23:43 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from URL [file:src/test/com/impetus/pizza/service/application-context.xml]
+Jun 01, 2012 2:23:44 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@1f75734: startup date [Fri Jun 01 14:23:44 IST 2012]; root of context hierarchy
+Jun 01, 2012 2:23:45 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1f32f9a: defining beans [IngredientDAO,productDAO,SchemeDAO,userinfoDAO,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,ingredientServiceImpl,productServiceImpl,schemeServiceImpl,userinfoServiceImpl,userValidator,homeController,ingredientController,productController,schemeController,userinfoController,dataSource,sessionFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager]; root of factory hierarchy
+Jun 01, 2012 2:23:45 PM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+INFO: Loaded JDBC driver: com.mysql.jdbc.Driver
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.annotations.Version <clinit>
+INFO: Hibernate Annotations 3.3.1.GA
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.Environment <clinit>
+INFO: Hibernate 3.2.5
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.Environment <clinit>
+INFO: hibernate.properties not found
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: Bytecode provider name : cglib
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.Environment <clinit>
+INFO: using JDK 1.4 java.sql.Timestamp handling
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Category
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Category on table category
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Coupon
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Coupon on table coupon
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Ingredient
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Ingredient on table ingredient
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Offer
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Offer on table offer
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Product
+Jun 01, 2012 2:23:45 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Product on table product
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Role
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Role on table role
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Userinfo
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Userinfo on table userinfo
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.UserOrder
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.UserOrder on table userorder
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.UserRecord
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.UserRecord on table userrecord
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.annotations.CollectionBinder bindOneToManySecondPass
+INFO: Mapping collection: com.impetus.pizza.domain.UserRecord.orderlist -> userorder
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.AnnotationConfiguration secondPassCompile
+INFO: Hibernate Validator not found: ignoring
+Jun 01, 2012 2:23:46 PM org.springframework.orm.hibernate3.LocalSessionFactoryBean buildSessionFactory
+INFO: Building new Hibernate SessionFactory
+Jun 01, 2012 2:23:46 PM org.hibernate.connection.ConnectionProviderFactory newConnectionProvider
+INFO: Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: RDBMS: MySQL, version: 5.5.15
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+Jun 01, 2012 2:23:46 PM org.hibernate.dialect.Dialect <init>
+INFO: Using dialect: org.hibernate.dialect.MySQLDialect
+Jun 01, 2012 2:23:46 PM org.hibernate.transaction.TransactionFactoryFactory buildTransactionFactory
+INFO: Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+Jun 01, 2012 2:23:46 PM org.hibernate.transaction.TransactionManagerLookupFactory getTransactionManagerLookup
+INFO: No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic flush during beforeCompletion(): disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic session close at end of transaction: disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Scrollable result sets: enabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC3 getGeneratedKeys(): enabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Connection release mode: auto
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Maximum outer join fetch depth: 2
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default batch fetch size: 1
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Generate SQL with comments: disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL updates by primary key: disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL inserts for batching: disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+INFO: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+Jun 01, 2012 2:23:46 PM org.hibernate.hql.ast.ASTQueryTranslatorFactory <init>
+INFO: Using ASTQueryTranslatorFactory
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query language substitutions: {}
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JPA-QL strict compliance: disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Second-level cache: enabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query cache: disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory createCacheProvider
+INFO: Cache provider: org.hibernate.cache.NoCacheProvider
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Optimize cache for minimal puts: disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Structured second-level cache entries: disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Echoing all SQL to stdout
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Statistics: disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Deleted entity synthetic identifier rollback: disabled
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default entity-mode: pojo
+Jun 01, 2012 2:23:46 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Named query checking : enabled
+Jun 01, 2012 2:23:46 PM org.hibernate.impl.SessionFactoryImpl <init>
+INFO: building session factory
+Jun 01, 2012 2:23:46 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1f32f9a: defining beans [IngredientDAO,productDAO,SchemeDAO,userinfoDAO,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,ingredientServiceImpl,productServiceImpl,schemeServiceImpl,userinfoServiceImpl,userValidator,homeController,ingredientController,productController,schemeController,userinfoController,dataSource,sessionFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager]; root of factory hierarchy
+Jun 01, 2012 2:23:47 PM org.springframework.test.context.TestContextManager prepareTestInstance
+SEVERE: Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@ee5558] to prepare test instance [test.com.impetus.pizza.service.UserinfoDAOImplTest@1253e54]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IngredientDAO': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory com.impetus.pizza.persistence.IngredientDAOImpl.sessionFactory; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: org.objectweb.asm.ClassWriter.<init>(Z)V
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:84)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory com.impetus.pizza.persistence.IngredientDAOImpl.sessionFactory; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: org.objectweb.asm.ClassWriter.<init>(Z)V
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:502)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:282)
+	... 36 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: org.objectweb.asm.ClassWriter.<init>(Z)V
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:844)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:786)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:703)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:474)
+	... 38 more
+Caused by: java.lang.NoSuchMethodError: org.objectweb.asm.ClassWriter.<init>(Z)V
+	at net.sf.cglib.core.DebuggingClassWriter.<init>(DebuggingClassWriter.java:47)
+	at net.sf.cglib.core.DefaultGeneratorStrategy.getClassWriter(DefaultGeneratorStrategy.java:30)
+	at net.sf.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:24)
+	at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:216)
+	at net.sf.cglib.core.KeyFactory$Generator.create(KeyFactory.java:145)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:117)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:108)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:104)
+	at net.sf.cglib.proxy.Enhancer.<clinit>(Enhancer.java:69)
+	at org.hibernate.proxy.pojo.cglib.CGLIBLazyInitializer.getProxyFactory(CGLIBLazyInitializer.java:117)
+	at org.hibernate.proxy.pojo.cglib.CGLIBProxyFactory.postInstantiate(CGLIBProxyFactory.java:43)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:162)
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.<init>(AbstractEntityTuplizer.java:135)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:55)
+	at org.hibernate.tuple.entity.EntityEntityModeToTuplizerMapping.<init>(EntityEntityModeToTuplizerMapping.java:56)
+	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:295)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:434)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:109)
+	at org.hibernate.persister.PersisterFactory.createClassPersister(PersisterFactory.java:55)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:226)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1294)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:859)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:860)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:779)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 48 more
+
+Jun 01, 2012 2:23:47 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from URL [file:src/test/com/impetus/pizza/service/application-context.xml]
+Jun 01, 2012 2:23:47 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@102ffa: startup date [Fri Jun 01 14:23:47 IST 2012]; root of context hierarchy
+Jun 01, 2012 2:23:47 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@176605: defining beans [IngredientDAO,productDAO,SchemeDAO,userinfoDAO,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,ingredientServiceImpl,productServiceImpl,schemeServiceImpl,userinfoServiceImpl,userValidator,homeController,ingredientController,productController,schemeController,userinfoController,dataSource,sessionFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager]; root of factory hierarchy
+Jun 01, 2012 2:23:47 PM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+INFO: Loaded JDBC driver: com.mysql.jdbc.Driver
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Category
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Category on table category
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Coupon
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Coupon on table coupon
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Ingredient
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Ingredient on table ingredient
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Offer
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Offer on table offer
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Product
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Product on table product
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Role
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Role on table role
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Userinfo
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Userinfo on table userinfo
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.UserOrder
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.UserOrder on table userorder
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.UserRecord
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.UserRecord on table userrecord
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.annotations.CollectionBinder bindOneToManySecondPass
+INFO: Mapping collection: com.impetus.pizza.domain.UserRecord.orderlist -> userorder
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.AnnotationConfiguration secondPassCompile
+INFO: Hibernate Validator not found: ignoring
+Jun 01, 2012 2:23:47 PM org.springframework.orm.hibernate3.LocalSessionFactoryBean buildSessionFactory
+INFO: Building new Hibernate SessionFactory
+Jun 01, 2012 2:23:47 PM org.hibernate.connection.ConnectionProviderFactory newConnectionProvider
+INFO: Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: RDBMS: MySQL, version: 5.5.15
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+Jun 01, 2012 2:23:47 PM org.hibernate.dialect.Dialect <init>
+INFO: Using dialect: org.hibernate.dialect.MySQLDialect
+Jun 01, 2012 2:23:47 PM org.hibernate.transaction.TransactionFactoryFactory buildTransactionFactory
+INFO: Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+Jun 01, 2012 2:23:47 PM org.hibernate.transaction.TransactionManagerLookupFactory getTransactionManagerLookup
+INFO: No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic flush during beforeCompletion(): disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic session close at end of transaction: disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Scrollable result sets: enabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC3 getGeneratedKeys(): enabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Connection release mode: auto
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Maximum outer join fetch depth: 2
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default batch fetch size: 1
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Generate SQL with comments: disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL updates by primary key: disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL inserts for batching: disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+INFO: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+Jun 01, 2012 2:23:47 PM org.hibernate.hql.ast.ASTQueryTranslatorFactory <init>
+INFO: Using ASTQueryTranslatorFactory
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query language substitutions: {}
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JPA-QL strict compliance: disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Second-level cache: enabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query cache: disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory createCacheProvider
+INFO: Cache provider: org.hibernate.cache.NoCacheProvider
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Optimize cache for minimal puts: disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Structured second-level cache entries: disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Echoing all SQL to stdout
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Statistics: disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Deleted entity synthetic identifier rollback: disabled
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default entity-mode: pojo
+Jun 01, 2012 2:23:47 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Named query checking : enabled
+Jun 01, 2012 2:23:47 PM org.hibernate.impl.SessionFactoryImpl <init>
+INFO: building session factory
+Jun 01, 2012 2:23:47 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@176605: defining beans [IngredientDAO,productDAO,SchemeDAO,userinfoDAO,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,ingredientServiceImpl,productServiceImpl,schemeServiceImpl,userinfoServiceImpl,userValidator,homeController,ingredientController,productController,schemeController,userinfoController,dataSource,sessionFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager]; root of factory hierarchy
+Jun 01, 2012 2:23:47 PM org.springframework.test.context.TestContextManager prepareTestInstance
+SEVERE: Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@ee5558] to prepare test instance [test.com.impetus.pizza.service.UserinfoDAOImplTest@56e5d8]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:301)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:303)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IngredientDAO': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory com.impetus.pizza.persistence.IngredientDAOImpl.sessionFactory; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:580)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:84)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory com.impetus.pizza.persistence.IngredientDAOImpl.sessionFactory; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:502)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:282)
+	... 36 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:src/test/com/impetus/pizza/service/application-context.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:844)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:786)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:703)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:474)
+	... 38 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+	at org.hibernate.proxy.pojo.cglib.CGLIBLazyInitializer.getProxyFactory(CGLIBLazyInitializer.java:117)
+	at org.hibernate.proxy.pojo.cglib.CGLIBProxyFactory.postInstantiate(CGLIBProxyFactory.java:43)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:162)
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.<init>(AbstractEntityTuplizer.java:135)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:55)
+	at org.hibernate.tuple.entity.EntityEntityModeToTuplizerMapping.<init>(EntityEntityModeToTuplizerMapping.java:56)
+	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:295)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:434)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:109)
+	at org.hibernate.persister.PersisterFactory.createClassPersister(PersisterFactory.java:55)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:226)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1294)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:859)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:860)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:779)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 48 more
+
+]]></system-err>
+</testsuite>

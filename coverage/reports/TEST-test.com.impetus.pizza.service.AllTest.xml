@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="impetus-462" name="test.com.impetus.pizza.service.AllTest" tests="28" time="15.247" timestamp="2012-06-09T06:11:08">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="appserver.lib" value="D:/apache-tomcat-7.0.26/lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/D:/softwares/eclipse-jee-indigo-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/templates/" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="lib" value="WebContent/WEB-INF/lib" />
+    <property name="os.name" value="Windows 7" />
+    <property name="sun.boot.class.path" value="D:\Java\jre7\lib\resources.jar;D:\Java\jre7\lib\rt.jar;D:\Java\jre7\lib\sunrsasign.jar;D:\Java\jre7\lib\jsse.jar;D:\Java\jre7\lib\jce.jar;D:\Java\jre7\lib\charsets.jar;D:\Java\jre7\classes" />
+    <property name="findbugs.home" value="findbugs-1.3.8" />
+    <property name="report" value="D:\TempWork\OnlineShop\report" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="net.sourceforge.cobertura.datafile" value="D:\TempWork\OnlineShop\cobertura.ser" />
+    <property name="ant.home" value="D:\ANT" />
+    <property name="java.runtime.version" value="1.7.0-b147" />
+    <property name="user.name" value="deepak.mundhada" />
+    <property name="tomcat.manager.url" value="http://localhost/manager" />
+    <property name="build.dir" value="build/classes" />
+    <property name="build1.dir" value="D:/apache-tomcat-7.0.26" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="D:\Java\jre7\bin" />
+    <property name="ant.project.default-target" value="main" />
+    <property name="ant.project.name" value="OnlineShop" />
+    <property name="java.version" value="1.7.0" />
+    <property name="user.timezone" value="" />
+    <property name="bin" value="report/bin" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="D:\Java\jre7\lib\endorsed" />
+    <property name="cobertura.cp" value="coverage/moved" />
+    <property name="appserver.home" value="D:/apache-tomcat-7.0.26" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="51.0" />
+    <property name="user.country" value="US" />
+    <property name="value" value="&quot;jdbc:mysql://localhost:3306/sonar?useUnicode=true&amp;amp;characterEncoding=utf8&quot; /&gt;" />
+    <property name="java.home" value="D:\Java\jre7" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="findbug.reports" value="D:\TempWork\OnlineShop\report\findbug_report" />
+    <property name="ant.file" value="D:\TempWork\OnlineShop\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="tomcat.manager.password" value="tomcatnager.password=tomcat" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="21.0-b17" />
+    <property name="dest.path" value="D:\TempWork\OnlineShop\OnlineShop" />
+    <property name="user.variant" value="" />
+    <property name="web.dir" value="WebContent" />
+    <property name="ant.library.dir" value="D:\ANT\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="tomcat.manager.username" value="tomcat" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="user.script" value="" />
+    <property name="&lt;taskdef" value="uri=&quot;antlib:org.sonar.ant&quot; resource=&quot;org/sonar/ant/antlib.xml&quot;&gt;" />
+    <property name="eclipse.pdebuild.scripts" value="/D:/softwares/eclipse-jee-indigo-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/scripts/" />
+    <property name="reports.xml.dir" value="coverage/reports" />
+    <property name="user.home" value="C:\Users\deepak.mundhada" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="src/test/com/impetus/pizza/service" />
+    <property name="java.library.path" value="D:\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/Java/jre7/bin/client;D:/Java/jre7/bin;D:/Java/jre7/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;D:\jdk1.6.0_07\bin;D:\apache-maven-2.2.1\bin;C:\Program Files\TortoiseSVN\bin;D:\softwares\eclipse-jee-indigo-win32\eclipse;;." />
+    <property name="name" value="OnlineShop" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="edu.umd.cs.findbugs.FindBugs2.executeReturnCode.6d34a26e-43a6-43c5-b0d7-823a7d80cac8" value="3" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.com.impetus.pizza.service.AllTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\TempWork\OnlineShop\coverage\reports\TEST-test.com.impetus.pizza.service.AllTest.xml crashfile=D:\TempWork\OnlineShop\junitvmwatcher2236564957191684812.properties propsfile=D:\TempWork\OnlineShop\junit361594113345084047.properties" />
+    <property name="java.class.path" value="D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\antlr-2.7.6.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\aopalliance.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\asm-attrs.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\asm-tree-3.3.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\asm.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cglib-2.1.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cobertura.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-beanutils-1.8.0.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-codec-1.5.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-collections-2.1.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-dbcp-1.4.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-digester-2.0.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-fileupload-1.2.2.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-httpclient-3.0.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-io-2.0.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-logging-1.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\commons-pool-1.5.6.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-api-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-common-utilities-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-bindings-soap-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-bindings-xml-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-core-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-databinding-jaxb-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-frontend-jaxrs-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-frontend-jaxws-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-frontend-simple-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-transports-common-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-transports-http-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-rt-ws-addr-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\cxf-tools-common-2.5.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\dom4j-1.6.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\ehcache-1.2.3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\ejb3-persistence.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\hibernate-annotations.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\hibernate-commons-annotations.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\hibernate-entitymanager.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\hibernate-tools.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\hibernate3.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\jakarta-oro-2.0.8.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\javassist.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\jcl-over-slf4j-1.5.8.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\jsr311-api-1.1.1.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\jstl.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\jta.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\junit-4.7.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\log4j-1.2.15.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\mail.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\mysql-connector-java-5.1.6-bin.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\neethi-3.0.2.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.aop-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.asm-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.aspects-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.beans-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.context-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.context.support-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.core-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.expression-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.instrument-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.instrument.tomcat-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.jdbc-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.jms-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.js-2.0.4.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.orm-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.oxm-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.test-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.transaction-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.web-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.web.portlet-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.web.servlet-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\org.springframework.web.struts-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\servlet-api.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\slf4j-api-1.5.8.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\slf4j-jdk14-1.5.8.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\spring-security-config-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\spring-security-core-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\spring-security-taglibs-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\spring-security-web-3.0.5.RELEASE.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\standard.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\wsdl4j-1.6.2.jar;D:\TempWork\OnlineShop\WebContent\WEB-INF\lib\xalan-2.7.0.jar;D:\TempWork\OnlineShop\coverage\instrumented;D:\TempWork\OnlineShop\report\bin;D:\ANT\lib\junit.jar;D:\ANT\lib\ant-launcher.jar;D:\ANT\lib\ant.jar;D:\ANT\lib\ant-junit.jar;D:\ANT\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="java.io.tmpdir" value="C:\Users\DEEPAK~1.MUN\AppData\Local\Temp\" />
+    <property name="eclipse.pdebuild.home" value="/D:/softwares/eclipse-jee-indigo-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/./" />
+    <property name="deploy.path" value="D:/apache-tomcat-7.0.26/webapps" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="os.arch" value="x86" />
+    <property name="instrumented.dir" value="coverage/instrumented" />
+    <property name="&lt;property" value="name=&quot;sonar.host.url&quot; value=&quot;http://localhost:9000&quot; /&gt;" />
+    <property name="java.ext.dirs" value="D:\Java\jre7\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\TempWork\OnlineShop" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="basedir" value="D:\TempWork\OnlineShop" />
+    <property name="ant.file.OnlineShop" value="D:\TempWork\OnlineShop\build.xml" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="D:\ANT\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="ant.file.type.OnlineShop" value="file" />
+    <property name="checkstyle.reports" value="D:\TempWork\OnlineShop\report\checkstyle_report" />
+    <property name="&lt;/taskdef&gt;" value="" />
+    <property name="junit.report" value="D:\TempWork\OnlineShop\report\junit" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="src" />
+    <property name="ant.project.invoked-targets" value="main" />
+    <property name="&lt;!--" value="SERVER ON A REMOTE HOST --&gt;" />
+    <property name="&lt;classpath" value="path=&quot;path/to/sonar/ant/task/lib&quot; /&gt; " />
+  </properties>
+  <testcase classname="test.com.impetus.pizza.service.IngredientServiceImplTest" name="testEditTopping" time="12.284" />
+  <testcase classname="test.com.impetus.pizza.service.IngredientServiceImplTest" name="testRemoveTopping" time="0.15" />
+  <testcase classname="test.com.impetus.pizza.service.IngredientServiceImplTest" name="testListCrust" time="0.347" />
+  <testcase classname="test.com.impetus.pizza.service.IngredientServiceImplTest" name="testAddTopping" time="0.061" />
+  <testcase classname="test.com.impetus.pizza.service.IngredientServiceImplTest" name="testListTopping" time="0.051" />
+  <testcase classname="test.com.impetus.pizza.service.IngredientServiceImplTest" name="testGetTopping" time="0.036" />
+  <testcase classname="test.com.impetus.pizza.service.IngredientServiceImplTest" name="testRemoveCrust" time="0.028" />
+  <testcase classname="test.com.impetus.pizza.service.IngredientServiceImplTest" name="testEditCrust" time="0.086" />
+  <testcase classname="test.com.impetus.pizza.service.IngredientServiceImplTest" name="testAddCrust" time="0.049" />
+  <testcase classname="test.com.impetus.pizza.service.IngredientServiceImplTest" name="testGetCrust" time="0.028" />
+  <testcase classname="test.com.impetus.pizza.service.ProductServiceImplTest" name="testGetPizzas" time="0.065" />
+  <testcase classname="test.com.impetus.pizza.service.ProductServiceImplTest" name="testEditPizza" time="0.055" />
+  <testcase classname="test.com.impetus.pizza.service.ProductServiceImplTest" name="testRemovePizza" time="0.043" />
+  <testcase classname="test.com.impetus.pizza.service.ProductServiceImplTest" name="testGetPizza" time="0.025" />
+  <testcase classname="test.com.impetus.pizza.service.ProductServiceImplTest" name="testAddPizza" time="0.051" />
+  <testcase classname="test.com.impetus.pizza.service.SchemeServiceTest" name="testAddCoupon" time="0.065" />
+  <testcase classname="test.com.impetus.pizza.service.SchemeServiceTest" name="testListOffer" time="0.023" />
+  <testcase classname="test.com.impetus.pizza.service.SchemeServiceTest" name="testListCoupon" time="0.025" />
+  <testcase classname="test.com.impetus.pizza.service.SchemeServiceTest" name="testRemoveOffer" time="0.024" />
+  <testcase classname="test.com.impetus.pizza.service.SchemeServiceTest" name="testRemoveCoupon" time="0.086" />
+  <testcase classname="test.com.impetus.pizza.service.SchemeServiceTest" name="testGetCoupon" time="0.025" />
+  <testcase classname="test.com.impetus.pizza.service.SchemeServiceTest" name="testAddOffer" time="0.051" />
+  <testcase classname="test.com.impetus.pizza.service.SchemeServiceTest" name="testGetOffer" time="0.022" />
+  <testcase classname="test.com.impetus.pizza.service.UserinfoDAOImplTest" name="testRegisterUser" time="0.058" />
+  <testcase classname="test.com.impetus.pizza.service.UserinfoDAOImplTest" name="testGetUser" time="0.024" />
+  <testcase classname="test.com.impetus.pizza.service.UserinfoServiceImplTest" name="testRegisterUser" time="0.075" />
+  <testcase classname="test.com.impetus.pizza.service.UserinfoServiceImplTest" name="testGetUser" time="0.019" />
+  <testcase classname="test.com.impetus.pizza.service.UserinfoServiceImplTest" name="testhistory" time="0.078" />
+  <system-out><![CDATA[Hibernate: insert into ingredient (categoryID, ingredientName, plarge, pmedium, psmall) values (?, ?, ?, ?, ?)
+Hibernate: select ingredient0_.ingredientID as ingredie1_2_1_, ingredient0_.categoryID as categoryID2_1_, ingredient0_.ingredientName as ingredie2_2_1_, ingredient0_.plarge as plarge2_1_, ingredient0_.pmedium as pmedium2_1_, ingredient0_.psmall as psmall2_1_, category1_.categoryID as categoryID0_0_, category1_.categoryType as category2_0_0_ from ingredient ingredient0_ left outer join category category1_ on ingredient0_.categoryID=category1_.categoryID where ingredient0_.ingredientID=?
+Hibernate: select ingredient0_.ingredientID as ingredie1_2_, ingredient0_.categoryID as categoryID2_, ingredient0_.ingredientName as ingredie2_2_, ingredient0_.plarge as plarge2_, ingredient0_.pmedium as pmedium2_, ingredient0_.psmall as psmall2_ from ingredient ingredient0_ where categoryID='3'
+Hibernate: select category0_.categoryID as categoryID0_0_, category0_.categoryType as category2_0_0_ from category category0_ where category0_.categoryID=?
+Hibernate: insert into ingredient (categoryID, ingredientName, plarge, pmedium, psmall) values (?, ?, ?, ?, ?)
+Hibernate: select ingredient0_.ingredientID as ingredie1_2_, ingredient0_.categoryID as categoryID2_, ingredient0_.ingredientName as ingredie2_2_, ingredient0_.plarge as plarge2_, ingredient0_.pmedium as pmedium2_, ingredient0_.psmall as psmall2_ from ingredient ingredient0_ where categoryID='2'
+Hibernate: select category0_.categoryID as categoryID0_0_, category0_.categoryType as category2_0_0_ from category category0_ where category0_.categoryID=?
+Hibernate: select ingredient0_.ingredientID as ingredie1_2_, ingredient0_.categoryID as categoryID2_, ingredient0_.ingredientName as ingredie2_2_, ingredient0_.plarge as plarge2_, ingredient0_.pmedium as pmedium2_, ingredient0_.psmall as psmall2_ from ingredient ingredient0_ where ingredient0_.ingredientID='23'
+Hibernate: select category0_.categoryID as categoryID0_0_, category0_.categoryType as category2_0_0_ from category category0_ where category0_.categoryID=?
+Hibernate: select ingredient0_.ingredientID as ingredie1_2_1_, ingredient0_.categoryID as categoryID2_1_, ingredient0_.ingredientName as ingredie2_2_1_, ingredient0_.plarge as plarge2_1_, ingredient0_.pmedium as pmedium2_1_, ingredient0_.psmall as psmall2_1_, category1_.categoryID as categoryID0_0_, category1_.categoryType as category2_0_0_ from ingredient ingredient0_ left outer join category category1_ on ingredient0_.categoryID=category1_.categoryID where ingredient0_.ingredientID=?
+Hibernate: insert into ingredient (categoryID, ingredientName, plarge, pmedium, psmall) values (?, ?, ?, ?, ?)
+Hibernate: insert into ingredient (categoryID, ingredientName, plarge, pmedium, psmall) values (?, ?, ?, ?, ?)
+Hibernate: select ingredient0_.ingredientID as ingredie1_2_, ingredient0_.categoryID as categoryID2_, ingredient0_.ingredientName as ingredie2_2_, ingredient0_.plarge as plarge2_, ingredient0_.pmedium as pmedium2_, ingredient0_.psmall as psmall2_ from ingredient ingredient0_ where ingredient0_.ingredientID='3'
+Hibernate: select category0_.categoryID as categoryID0_0_, category0_.categoryType as category2_0_0_ from category category0_ where category0_.categoryID=?
+Hibernate: select product0_.productID as productID4_, product0_.categoryID as categoryID4_, product0_.description as descript2_4_, product0_.image as image4_, product0_.plarge as plarge4_, product0_.pmedium as pmedium4_, product0_.productName as productN6_4_, product0_.psmall as psmall4_ from product product0_
+Hibernate: select category0_.categoryID as categoryID0_0_, category0_.categoryType as category2_0_0_ from category category0_ where category0_.categoryID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: insert into product (categoryID, description, image, plarge, pmedium, productName, psmall) values (?, ?, ?, ?, ?, ?, ?)
+ERROR  editPizza, org.hibernate.exception.ConstraintViolationException: could not insert: [com.impetus.pizza.domain.Product]
+Hibernate: select product0_.productID as productID4_3_, product0_.categoryID as categoryID4_3_, product0_.description as descript2_4_3_, product0_.image as image4_3_, product0_.plarge as plarge4_3_, product0_.pmedium as pmedium4_3_, product0_.productName as productN6_4_3_, product0_.psmall as psmall4_3_, category1_.categoryID as categoryID0_0_, category1_.categoryType as category2_0_0_, ingredient2_.productID as productID5_, ingredient3_.ingredientID as ingredie2_5_, ingredient3_.ingredientID as ingredie1_2_1_, ingredient3_.categoryID as categoryID2_1_, ingredient3_.ingredientName as ingredie2_2_1_, ingredient3_.plarge as plarge2_1_, ingredient3_.pmedium as pmedium2_1_, ingredient3_.psmall as psmall2_1_, category4_.categoryID as categoryID0_2_, category4_.categoryType as category2_0_2_ from product product0_ left outer join category category1_ on product0_.categoryID=category1_.categoryID left outer join productingredient ingredient2_ on product0_.productID=ingredient2_.productID left outer join ingredient ingredient3_ on ingredient2_.ingredientID=ingredient3_.ingredientID left outer join category category4_ on ingredient3_.categoryID=category4_.categoryID where product0_.productID=?
+Hibernate: select userlist0_.productID as productID2_, userlist0_.userID as userID2_, userinfo1_.userID as userID6_0_, userinfo1_.roleID as roleID6_0_, userinfo1_.userAddress as userAddr2_6_0_, userinfo1_.userMobile as userMobile6_0_, userinfo1_.userName as userName6_0_, userinfo1_.userPassword as userPass5_6_0_, role2_.roleID as roleID5_1_, role2_.roleType as roleType5_1_ from preference userlist0_ left outer join userinfo userinfo1_ on userlist0_.userID=userinfo1_.userID left outer join role role2_ on userinfo1_.roleID=role2_.roleID where userlist0_.productID=?
+Hibernate: select product0_.productID as productID4_3_, product0_.categoryID as categoryID4_3_, product0_.description as descript2_4_3_, product0_.image as image4_3_, product0_.plarge as plarge4_3_, product0_.pmedium as pmedium4_3_, product0_.productName as productN6_4_3_, product0_.psmall as psmall4_3_, category1_.categoryID as categoryID0_0_, category1_.categoryType as category2_0_0_, ingredient2_.productID as productID5_, ingredient3_.ingredientID as ingredie2_5_, ingredient3_.ingredientID as ingredie1_2_1_, ingredient3_.categoryID as categoryID2_1_, ingredient3_.ingredientName as ingredie2_2_1_, ingredient3_.plarge as plarge2_1_, ingredient3_.pmedium as pmedium2_1_, ingredient3_.psmall as psmall2_1_, category4_.categoryID as categoryID0_2_, category4_.categoryType as category2_0_2_ from product product0_ left outer join category category1_ on product0_.categoryID=category1_.categoryID left outer join productingredient ingredient2_ on product0_.productID=ingredient2_.productID left outer join ingredient ingredient3_ on ingredient2_.ingredientID=ingredient3_.ingredientID left outer join category category4_ on ingredient3_.categoryID=category4_.categoryID where product0_.productID=?
+Hibernate: insert into product (categoryID, description, image, plarge, pmedium, productName, psmall) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into coupon (couponNo, discount, endDate, startDate, isActive) values (?, ?, ?, ?, ?)
+Hibernate: select offer0_.offerId as offerId3_, offer0_.offerOnAmount as offerOnA2_3_, offer0_.discount as discount3_, offer0_.endDate as endDate3_, offer0_.offerName as offerName3_, offer0_.offerOnQuantity as offerOnQ6_3_, offer0_.startDate as startDate3_ from offer offer0_
+Hibernate: select coupon0_.ID as ID1_, coupon0_.couponNo as couponNo1_, coupon0_.discount as discount1_, coupon0_.endDate as endDate1_, coupon0_.startDate as startDate1_, coupon0_.isActive as isActive1_ from coupon coupon0_
+Hibernate: select offer0_.offerId as offerId3_0_, offer0_.offerOnAmount as offerOnA2_3_0_, offer0_.discount as discount3_0_, offer0_.endDate as endDate3_0_, offer0_.offerName as offerName3_0_, offer0_.offerOnQuantity as offerOnQ6_3_0_, offer0_.startDate as startDate3_0_ from offer offer0_ where offer0_.offerId=?
+Hibernate: delete from coupon where CouponNo='cou121212'
+Hibernate: select coupon0_.ID as ID1_, coupon0_.couponNo as couponNo1_, coupon0_.discount as discount1_, coupon0_.endDate as endDate1_, coupon0_.startDate as startDate1_, coupon0_.isActive as isActive1_ from coupon coupon0_ where CouponNo='cou121212'
+Hibernate: insert into offer (offerOnAmount, discount, endDate, offerName, offerOnQuantity, startDate) values (?, ?, ?, ?, ?, ?)
+Hibernate: select offer0_.offerId as offerId3_, offer0_.offerOnAmount as offerOnA2_3_, offer0_.discount as discount3_, offer0_.endDate as endDate3_, offer0_.offerName as offerName3_, offer0_.offerOnQuantity as offerOnQ6_3_, offer0_.startDate as startDate3_ from offer offer0_ where offer0_.offerId='14'
+Hibernate: select userinfo0_.userID as userID6_, userinfo0_.roleID as roleID6_, userinfo0_.userAddress as userAddr2_6_, userinfo0_.userMobile as userMobile6_, userinfo0_.userName as userName6_, userinfo0_.userPassword as userPass5_6_ from userinfo userinfo0_ where userinfo0_.userName='depak@gmail.com'
+Hibernate: insert into userinfo (roleID, userAddress, userMobile, userName, userPassword) values (?, ?, ?, ?, ?)
+Hibernate: select userinfo0_.userID as userID6_, userinfo0_.roleID as roleID6_, userinfo0_.userAddress as userAddr2_6_, userinfo0_.userMobile as userMobile6_, userinfo0_.userName as userName6_, userinfo0_.userPassword as userPass5_6_ from userinfo userinfo0_ where userinfo0_.userName='deepak@gmail.com'
+Hibernate: select role0_.roleID as roleID5_0_, role0_.roleType as roleType5_0_ from role role0_ where role0_.roleID=?
+Hibernate: select userinfo0_.userID as userID6_, userinfo0_.roleID as roleID6_, userinfo0_.userAddress as userAddr2_6_, userinfo0_.userMobile as userMobile6_, userinfo0_.userName as userName6_, userinfo0_.userPassword as userPass5_6_ from userinfo userinfo0_ where userinfo0_.userName='deee@gmail.com'
+Hibernate: insert into userinfo (roleID, userAddress, userMobile, userName, userPassword) values (?, ?, ?, ?, ?)
+Hibernate: select userinfo0_.userID as userID6_, userinfo0_.roleID as roleID6_, userinfo0_.userAddress as userAddr2_6_, userinfo0_.userMobile as userMobile6_, userinfo0_.userName as userName6_, userinfo0_.userPassword as userPass5_6_ from userinfo userinfo0_ where userinfo0_.userName='deepak@gmail.com'
+Hibernate: select role0_.roleID as roleID5_0_, role0_.roleType as roleType5_0_ from role role0_ where role0_.roleID=?
+Hibernate: select userrecord0_.orderID as orderID8_, userrecord0_.amount as amount8_, userrecord0_.deliveryAddress as delivery3_8_, userrecord0_.discount as discount8_, userrecord0_.grandtotal as grandtotal8_, userrecord0_.orderDate as orderDate8_, userrecord0_.orderType as orderType8_, userrecord0_.userID as userID8_ from userrecord userrecord0_ where userID='2'
+Hibernate: select userinfo0_.userID as userID6_1_, userinfo0_.roleID as roleID6_1_, userinfo0_.userAddress as userAddr2_6_1_, userinfo0_.userMobile as userMobile6_1_, userinfo0_.userName as userName6_1_, userinfo0_.userPassword as userPass5_6_1_, role1_.roleID as roleID5_0_, role1_.roleType as roleType5_0_ from userinfo userinfo0_ left outer join role role1_ on userinfo0_.roleID=role1_.roleID where userinfo0_.userID=?
+Hibernate: select orderlist0_.orderID as orderID3_, orderlist0_.detailID as detailID3_, orderlist0_.detailID as detailID7_2_, orderlist0_.price as price7_2_, orderlist0_.productID as productID7_2_, orderlist0_.quantity as quantity7_2_, orderlist0_.size as size7_2_, orderlist0_.orderID as orderID7_2_, product1_.productID as productID4_0_, product1_.categoryID as categoryID4_0_, product1_.description as descript2_4_0_, product1_.image as image4_0_, product1_.plarge as plarge4_0_, product1_.pmedium as pmedium4_0_, product1_.productName as productN6_4_0_, product1_.psmall as psmall4_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from userorder orderlist0_ inner join product product1_ on orderlist0_.productID=product1_.productID left outer join category category2_ on product1_.categoryID=category2_.categoryID where orderlist0_.orderID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select orderlist0_.orderID as orderID3_, orderlist0_.detailID as detailID3_, orderlist0_.detailID as detailID7_2_, orderlist0_.price as price7_2_, orderlist0_.productID as productID7_2_, orderlist0_.quantity as quantity7_2_, orderlist0_.size as size7_2_, orderlist0_.orderID as orderID7_2_, product1_.productID as productID4_0_, product1_.categoryID as categoryID4_0_, product1_.description as descript2_4_0_, product1_.image as image4_0_, product1_.plarge as plarge4_0_, product1_.pmedium as pmedium4_0_, product1_.productName as productN6_4_0_, product1_.psmall as psmall4_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from userorder orderlist0_ inner join product product1_ on orderlist0_.productID=product1_.productID left outer join category category2_ on product1_.categoryID=category2_.categoryID where orderlist0_.orderID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select orderlist0_.orderID as orderID3_, orderlist0_.detailID as detailID3_, orderlist0_.detailID as detailID7_2_, orderlist0_.price as price7_2_, orderlist0_.productID as productID7_2_, orderlist0_.quantity as quantity7_2_, orderlist0_.size as size7_2_, orderlist0_.orderID as orderID7_2_, product1_.productID as productID4_0_, product1_.categoryID as categoryID4_0_, product1_.description as descript2_4_0_, product1_.image as image4_0_, product1_.plarge as plarge4_0_, product1_.pmedium as pmedium4_0_, product1_.productName as productN6_4_0_, product1_.psmall as psmall4_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from userorder orderlist0_ inner join product product1_ on orderlist0_.productID=product1_.productID left outer join category category2_ on product1_.categoryID=category2_.categoryID where orderlist0_.orderID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select orderlist0_.orderID as orderID3_, orderlist0_.detailID as detailID3_, orderlist0_.detailID as detailID7_2_, orderlist0_.price as price7_2_, orderlist0_.productID as productID7_2_, orderlist0_.quantity as quantity7_2_, orderlist0_.size as size7_2_, orderlist0_.orderID as orderID7_2_, product1_.productID as productID4_0_, product1_.categoryID as categoryID4_0_, product1_.description as descript2_4_0_, product1_.image as image4_0_, product1_.plarge as plarge4_0_, product1_.pmedium as pmedium4_0_, product1_.productName as productN6_4_0_, product1_.psmall as psmall4_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from userorder orderlist0_ inner join product product1_ on orderlist0_.productID=product1_.productID left outer join category category2_ on product1_.categoryID=category2_.categoryID where orderlist0_.orderID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+Hibernate: select orderlist0_.orderID as orderID3_, orderlist0_.detailID as detailID3_, orderlist0_.detailID as detailID7_2_, orderlist0_.price as price7_2_, orderlist0_.productID as productID7_2_, orderlist0_.quantity as quantity7_2_, orderlist0_.size as size7_2_, orderlist0_.orderID as orderID7_2_, product1_.productID as productID4_0_, product1_.categoryID as categoryID4_0_, product1_.description as descript2_4_0_, product1_.image as image4_0_, product1_.plarge as plarge4_0_, product1_.pmedium as pmedium4_0_, product1_.productName as productN6_4_0_, product1_.psmall as psmall4_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from userorder orderlist0_ inner join product product1_ on orderlist0_.productID=product1_.productID left outer join category category2_ on product1_.categoryID=category2_.categoryID where orderlist0_.orderID=?
+Hibernate: select ingredient0_.productID as productID2_, ingredient0_.ingredientID as ingredie2_2_, ingredient1_.ingredientID as ingredie1_2_0_, ingredient1_.categoryID as categoryID2_0_, ingredient1_.ingredientName as ingredie2_2_0_, ingredient1_.plarge as plarge2_0_, ingredient1_.pmedium as pmedium2_0_, ingredient1_.psmall as psmall2_0_, category2_.categoryID as categoryID0_1_, category2_.categoryType as category2_0_1_ from productingredient ingredient0_ left outer join ingredient ingredient1_ on ingredient0_.ingredientID=ingredient1_.ingredientID left outer join category category2_ on ingredient1_.categoryID=category2_.categoryID where ingredient0_.productID=?
+]]></system-out>
+  <system-err><![CDATA[Jun 09, 2012 11:41:07 AM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: @TestExecutionListeners is not present for class [class test.com.impetus.pizza.service.IngredientServiceImplTest]: using defaults.
+Jun 09, 2012 11:41:07 AM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: @TestExecutionListeners is not present for class [class test.com.impetus.pizza.service.ProductServiceImplTest]: using defaults.
+Jun 09, 2012 11:41:07 AM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: @TestExecutionListeners is not present for class [class test.com.impetus.pizza.service.SchemeServiceTest]: using defaults.
+Jun 09, 2012 11:41:07 AM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: @TestExecutionListeners is not present for class [class test.com.impetus.pizza.service.UserinfoDAOImplTest]: using defaults.
+Jun 09, 2012 11:41:07 AM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: @TestExecutionListeners is not present for class [class test.com.impetus.pizza.service.UserinfoServiceImplTest]: using defaults.
+Jun 09, 2012 11:41:09 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from URL [file:src/test/com/impetus/pizza/service/application-context.xml]
+Jun 09, 2012 11:41:12 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@15ac942: startup date [Sat Jun 09 11:41:12 IST 2012]; root of context hierarchy
+Jun 09, 2012 11:41:13 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5dbc82: defining beans [IngredientDAO,productDAO,SchemeDAO,userinfoDAO,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,ingredientServiceImpl,productServiceImpl,schemeServiceImpl,userinfoServiceImpl,userValidator,homeController,ingredientController,productController,schemeController,userinfoController,dataSource,sessionFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager]; root of factory hierarchy
+Jun 09, 2012 11:41:13 AM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+INFO: Loaded JDBC driver: com.mysql.jdbc.Driver
+Jun 09, 2012 11:41:14 AM org.hibernate.cfg.annotations.Version <clinit>
+INFO: Hibernate Annotations 3.3.1.GA
+Jun 09, 2012 11:41:14 AM org.hibernate.cfg.Environment <clinit>
+INFO: Hibernate 3.2.5
+Jun 09, 2012 11:41:14 AM org.hibernate.cfg.Environment <clinit>
+INFO: hibernate.properties not found
+Jun 09, 2012 11:41:14 AM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: Bytecode provider name : cglib
+Jun 09, 2012 11:41:14 AM org.hibernate.cfg.Environment <clinit>
+INFO: using JDK 1.4 java.sql.Timestamp handling
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Category
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Category on table category
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Coupon
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Coupon on table coupon
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Ingredient
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Ingredient on table ingredient
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Offer
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Offer on table offer
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Product
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Product on table product
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Role
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Role on table role
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.Userinfo
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.Userinfo on table userinfo
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.UserOrder
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.UserOrder on table userorder
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.AnnotationBinder bindClass
+INFO: Binding entity from annotated class: com.impetus.pizza.domain.UserRecord
+Jun 09, 2012 11:41:15 AM org.hibernate.cfg.annotations.EntityBinder bindTable
+INFO: Bind entity com.impetus.pizza.domain.UserRecord on table userrecord
+Jun 09, 2012 11:41:16 AM org.hibernate.cfg.annotations.CollectionBinder bindOneToManySecondPass
+INFO: Mapping collection: com.impetus.pizza.domain.UserRecord.orderlist -> userorder
+Jun 09, 2012 11:41:16 AM org.hibernate.cfg.AnnotationConfiguration secondPassCompile
+INFO: Hibernate Validator not found: ignoring
+Jun 09, 2012 11:41:16 AM org.springframework.orm.hibernate3.LocalSessionFactoryBean buildSessionFactory
+INFO: Building new Hibernate SessionFactory
+Jun 09, 2012 11:41:16 AM org.hibernate.connection.ConnectionProviderFactory newConnectionProvider
+INFO: Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: RDBMS: MySQL, version: 5.5.15
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+Jun 09, 2012 11:41:17 AM org.hibernate.dialect.Dialect <init>
+INFO: Using dialect: org.hibernate.dialect.MySQLDialect
+Jun 09, 2012 11:41:17 AM org.hibernate.transaction.TransactionFactoryFactory buildTransactionFactory
+INFO: Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+Jun 09, 2012 11:41:17 AM org.hibernate.transaction.TransactionManagerLookupFactory getTransactionManagerLookup
+INFO: No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic flush during beforeCompletion(): disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic session close at end of transaction: disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Scrollable result sets: enabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC3 getGeneratedKeys(): enabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Connection release mode: auto
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Maximum outer join fetch depth: 2
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default batch fetch size: 1
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Generate SQL with comments: disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL updates by primary key: disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL inserts for batching: disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+INFO: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+Jun 09, 2012 11:41:17 AM org.hibernate.hql.ast.ASTQueryTranslatorFactory <init>
+INFO: Using ASTQueryTranslatorFactory
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query language substitutions: {}
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JPA-QL strict compliance: disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Second-level cache: enabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query cache: disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory createCacheProvider
+INFO: Cache provider: org.hibernate.cache.NoCacheProvider
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Optimize cache for minimal puts: disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Structured second-level cache entries: disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Echoing all SQL to stdout
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Statistics: disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Deleted entity synthetic identifier rollback: disabled
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default entity-mode: pojo
+Jun 09, 2012 11:41:17 AM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Named query checking : enabled
+Jun 09, 2012 11:41:17 AM org.hibernate.impl.SessionFactoryImpl <init>
+INFO: building session factory
+Jun 09, 2012 11:41:18 AM org.hibernate.impl.SessionFactoryObjectFactory addInstance
+INFO: Not binding factory to JNDI, no JNDI name configured
+Jun 09, 2012 11:41:18 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: Running hbm2ddl schema update
+Jun 09, 2012 11:41:18 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: fetching database metadata
+Jun 09, 2012 11:41:18 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: updating schema
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.category
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [categoryid, categorytype]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, categorytype]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.coupon
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [id, startdate, isactive, couponno, enddate, discount]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.ingredient
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [categoryid, ingredientname, pmedium, plarge, psmall, ingredientid]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: [fkf3b271d169bd95b9]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [ingredientname, primary, fkf3b271d169bd95b9]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.offer
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [startdate, offerid, offeronamount, offeronquantity, offername, enddate, discount]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.orderdetail
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [detailid, ingredientid]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: [fk7d606d1f6697158d, fk7d606d1f4e86161f]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fk7d606d1f6697158d, fk7d606d1f4e86161f]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.preference
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [productid, userid]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: [fka8fcbcdbc87484d7, fka8fcbcdbd7c5fb41]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fka8fcbcdbc87484d7, fka8fcbcdbd7c5fb41]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.product
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [categoryid, pmedium, productid, description, plarge, image, psmall, productname]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: [fked8dccef69bd95b9]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary, fked8dccef69bd95b9, productname]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.productingredient
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [productid, ingredientid]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: [fk54f420004e86161f, fk54f42000c87484d7]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fk54f420004e86161f, fk54f42000c87484d7]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.role
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [roleid, roletype]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: []
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [primary]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.userinfo
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [usermobile, userpassword, username, useraddress, roleid, userid]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: [fkf02772f949547fa9]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fkf02772f949547fa9, username, primary]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.userorder
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [detailid, price, productid, quantity, orderid, size]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: [fk151d42639e5a4e87, fk151d4263c87484d7]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fk151d42639e5a4e87, primary, fk151d4263c87484d7]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: table found: pizza.userrecord
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: columns: [amount, orderdate, deliveryaddress, userid, ordertype, orderid, grandtotal, discount]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: foreign keys: [fk92f213dcd7c5fb41]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: indexes: [fk92f213dcd7c5fb41, primary]
+Jun 09, 2012 11:41:19 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: schema update complete
+Jun 09, 2012 11:41:20 AM org.springframework.orm.hibernate3.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@c14e39] of Hibernate SessionFactory for HibernateTransactionManager
+Jun 09, 2012 11:41:21 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (1): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:21 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1ea6d77 testClass = IngredientServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.IngredientServiceImplTest@1b8cfcc, testMethod = testEditTopping@IngredientServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:21 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (2): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:21 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1ea6d77 testClass = IngredientServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.IngredientServiceImplTest@1b340da, testMethod = testRemoveTopping@IngredientServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:21 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (3): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:21 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1ea6d77 testClass = IngredientServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.IngredientServiceImplTest@1a970e3, testMethod = testListCrust@IngredientServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (4): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1ea6d77 testClass = IngredientServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.IngredientServiceImplTest@1a6bb8d, testMethod = testAddTopping@IngredientServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (5): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1ea6d77 testClass = IngredientServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.IngredientServiceImplTest@1324479, testMethod = testListTopping@IngredientServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (6): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1ea6d77 testClass = IngredientServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.IngredientServiceImplTest@d663f8, testMethod = testGetTopping@IngredientServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (7): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1ea6d77 testClass = IngredientServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.IngredientServiceImplTest@4f70d3, testMethod = testRemoveCrust@IngredientServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (8): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1ea6d77 testClass = IngredientServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.IngredientServiceImplTest@72bd07, testMethod = testEditCrust@IngredientServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (9): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1ea6d77 testClass = IngredientServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.IngredientServiceImplTest@102293a, testMethod = testAddCrust@IngredientServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (10): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1ea6d77 testClass = IngredientServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.IngredientServiceImplTest@1cd14b0, testMethod = testGetCrust@IngredientServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (1): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@130e488 testClass = ProductServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.ProductServiceImplTest@ebacb7, testMethod = testGetPizzas@ProductServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (2): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 1048, SQLState: 23000
+Jun 09, 2012 11:41:22 AM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: Column 'categoryID' cannot be null
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@130e488 testClass = ProductServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.ProductServiceImplTest@1a600a8, testMethod = testEditPizza@ProductServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (3): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@130e488 testClass = ProductServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.ProductServiceImplTest@c3e273, testMethod = testRemovePizza@ProductServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (4): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@130e488 testClass = ProductServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.ProductServiceImplTest@15c9f89, testMethod = testGetPizza@ProductServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (5): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@130e488 testClass = ProductServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.ProductServiceImplTest@bbe3dd, testMethod = testAddPizza@ProductServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (1): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@36122 testClass = SchemeServiceTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.SchemeServiceTest@1de065d, testMethod = testAddCoupon@SchemeServiceTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (2): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@36122 testClass = SchemeServiceTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.SchemeServiceTest@11adc49, testMethod = testListOffer@SchemeServiceTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (3): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@36122 testClass = SchemeServiceTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.SchemeServiceTest@161ffdf, testMethod = testListCoupon@SchemeServiceTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (4): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@36122 testClass = SchemeServiceTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.SchemeServiceTest@1cc3481, testMethod = testRemoveOffer@SchemeServiceTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (5): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@36122 testClass = SchemeServiceTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.SchemeServiceTest@1ce7ff2, testMethod = testRemoveCoupon@SchemeServiceTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (6): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@36122 testClass = SchemeServiceTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.SchemeServiceTest@7c4113, testMethod = testGetCoupon@SchemeServiceTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (7): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@36122 testClass = SchemeServiceTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.SchemeServiceTest@1455e70, testMethod = testAddOffer@SchemeServiceTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (8): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@36122 testClass = SchemeServiceTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.SchemeServiceTest@1ed679d, testMethod = testGetOffer@SchemeServiceTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (1): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1cf4b78 testClass = UserinfoDAOImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.UserinfoDAOImplTest@63eda7, testMethod = testRegisterUser@UserinfoDAOImplTest, testException = [null]]]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (2): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:22 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@1cf4b78 testClass = UserinfoDAOImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.UserinfoDAOImplTest@4ec3c0, testMethod = testGetUser@UserinfoDAOImplTest, testException = [null]]]
+Jun 09, 2012 11:41:23 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (1): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:23 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@15171f3 testClass = UserinfoServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.UserinfoServiceImplTest@1047c5, testMethod = testRegisterUser@UserinfoServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:23 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (2): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:23 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@15171f3 testClass = UserinfoServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.UserinfoServiceImplTest@128e5a4, testMethod = testGetUser@UserinfoServiceImplTest, testException = [null]]]
+Jun 09, 2012 11:41:23 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (3): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19909d1]; rollback [true]
+Jun 09, 2012 11:41:23 AM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@15171f3 testClass = UserinfoServiceImplTest, locations = array<String>['file:src/test/com/impetus/pizza/service/application-context.xml'], testInstance = test.com.impetus.pizza.service.UserinfoServiceImplTest@1810fd9, testMethod = testhistory@UserinfoServiceImplTest, testException = [null]]]
+]]></system-err>
+</testsuite>
