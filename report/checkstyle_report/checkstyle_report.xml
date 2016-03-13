@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.0">
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\controller\HomeController.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\controller\IngredientController.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\controller\ProductController.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\controller\SchemeController.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\controller\UserinfoController.java">
+<error line="108" column="67" severity="warning" message="Expected @throws tag for &apos;DuplicateUserException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="523" severity="warning" message="Line matches the illegal pattern &apos;Replace System.out.println with log statement or Comment it out !!!! &apos;." source="com.puppycrawl.tools.checkstyle.checks.RegexpCheck"/>
+<error line="571" column="88" severity="warning" message="Expected @throws tag for &apos;PaymentException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\domain\Category.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\domain\Coupon.java">
+<error line="21" column="21" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\domain\Ingredient.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\domain\Offer.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\domain\Product.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\domain\Role.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\domain\UserOrder.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\domain\UserRecord.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\domain\Userinfo.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\exception\ApplicationException.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\exception\DuplicateUserException.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\exception\PaymentException.java">
+<error line="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="6" column="9" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="10" column="9" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\exception\ServiceException.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\persistence\IngredientDAO.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\persistence\IngredientDAOImpl.java">
+<error line="151" column="33" severity="warning" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\persistence\ProductDAO.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\persistence\ProductDAOImpl.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\persistence\SchemeDAO.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\persistence\SchemeDAOImpl.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\persistence\UserinfoDAO.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\persistence\UserinfoDAOImpl.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\service\IngredientService.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\service\IngredientServiceImpl.java">
+<error line="89" column="25" severity="warning" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\service\ProductService.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\service\ProductServiceImpl.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\service\SchemeService.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\service\SchemeServiceImpl.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\service\UserinfoService.java">
+<error line="24" column="70" severity="warning" message="Expected @throws tag for &apos;DuplicateUserException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\service\UserinfoServiceImpl.java">
+<error line="35" column="26" severity="warning" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\util\Payment.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\util\PaymentImpl.java">
+</file>
+<file name="D:\TempWork\OnlineShop\src\com\impetus\pizza\validator\UserValidator.java">
+<error line="37" column="25" severity="warning" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+</checkstyle>

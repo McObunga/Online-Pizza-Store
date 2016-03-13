@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This configuration file was written by the eclipse-cs plugin configuration editor
+-->
+<!--
+    Checkstyle-Configuration: SandStormCodingStandard_FinalCheck
+    Description: none
+-->
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+    <property name="severity" value="warning"/>
+	<module name="FileLength">
+            <property name="max" value="800"/>
+    </module>
+
+    <module name="TreeWalker">
+	   <module name="Regexp">
+          <property name="format" value="System\.(out|err)\.print(ln)?"/>
+		  <property name="message" value="Replace System.out.println with log statement or Comment it out !!!! "/>
+          <property name="illegalPattern" value="true"/>
+          <property name="ignoreComments" value="true"/>
+       </module>
+
+	   <module name="AnonInnerLength"/>
+        <module name="ExecutableStatementCount">
+            <property name="severity" value="ignore"/>
+            <property name="tokens" value="INSTANCE_INIT,STATIC_INIT,METHOD_DEF,CTOR_DEF"/>
+        </module>
+
+        <module name="AvoidNestedBlocks"/>
+        <module name="EmptyBlock"/>
+        <module name="NeedBraces"/>
+        <module name="EmptyStatement"/>
+        <module name="MissingSwitchDefault"/>
+        <module name="SimplifyBooleanExpression"/>
+        <module name="ConstantName">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.customMessage" value="Use all uppercase letters with the words separated by underscores. eg:MIN_BALANCE."/>
+        </module>
+        <module name="LocalVariableName">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.customMessage" value="Use full English descriptions with the first letter in lower case but do not hide existing fields/fields. For example, if you have a field named ‘firstName’ do not have a local variable called ‘firstName.’"/>
+        </module>
+        <module name="PackageName">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.customMessage" value="Identifiers are separated by periods. To make package names more readable.For example, the package name java.awt is comprised of two identifiers, java and awt."/>
+        </module>
+        <module name="MethodName">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.customMessage" value="Start the method name with an active verb whenever possible, with the first letter in lower case and the first letter of all subsequent words in uppercase.Eg:openFile(), addClient()."/>
+        </module>
+        <module name="TypeName">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.customMessage" value="Use a full English description, with the first letters of all words capitalized."/>
+            <property name="tokens" value="CLASS_DEF"/>
+        </module>
+        <module name="AvoidStarImport">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.customMessage" value="Don’t use wildcard imports.  Don’t use package names when referencing classes, i.e., declaring reference variables or creating object of that type, (unless forced to because identical class names from different packages are being referenced.)"/>
+        </module>
+
+        <module name="MethodLength"/>
+        <module name="ParameterNumber"/>
+        <module name="MagicNumber"/>
+        <module name="JavadocMethod">
+            <property name="logLoadErrors" value="true"/>
+            <property name="suppressLoadErrors" value="true"/>
+        </module>
+        <module name="JavadocStyle"/>
+        <module name="JavadocType"/>
+        <module name="JavadocVariable"/>
+        <module name="CyclomaticComplexity">
+            <property name="max" value="20"/>
+        </module>
+        <module name="JavaNCSS">
+            <property name="methodMaximum" value="150"/>
+            <property name="classMaximum" value="800"/>
+            <property name="fileMaximum" value="1200"/>
+        </module>
+        <module name="MemberName"/>
+    </module>
+</module>
