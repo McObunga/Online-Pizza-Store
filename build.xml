@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="OnlineShop" basedir="." default="main">
+	<property file="build.properties" />
+
+	<property name="src.dir" value="src" />
+	<property name="web.dir" value="WebContent" />
+	<!--<property name="build.dir" value="${web.dir}/WEB-INF/classes" />-->
+	<property name="build.dir" value="build/classes" />
+	<property name="name" value="OnlineShop" />
+	<property name="dest.path" location="OnlineShop" />
+	<property name="build1.dir" value="D:/apache-tomcat-7.0.26" />
+	<property name="report" location="report" />
+	<property name="checkstyle.reports" location="${report}/checkstyle_report" />
+	<property name="junit.report" location="${report}/junit" />
+	<property name="findbug.reports" location="${report}/findbug_report" />
+	<property name="lib" value="${web.dir}/WEB-INF/lib" />
+	<property name="cobertura.cp" value="coverage/moved" />
+	<property name="instrumented.dir" value="coverage/instrumented" />
+	<property name="reports.xml.dir" value="coverage/reports" />
+	<property name="bin" value="report/bin" />
+	<property name="test.dir" value="${src.dir}/test/com/impetus/pizza/service" />
+	
+	<target name="clean">
+		<delete dir="${bin}" />
+	</target>
+
+	<path id="master-classpath">
+		<fileset dir="${web.dir}/WEB-INF/lib">
+			<include name="*.jar" />
+		</fileset>
+		<!-- We need the servlet API classes: -->
+		<fileset dir="${appserver.lib}">
+			<include name="servlet*.jar" />
+		</fileset>
+		<pathelement path="${build1.dir}" />
+	</path>
+
+	<target name="build" description="Compile main source tree java files">
+		<mkdir dir="${build.dir}" />
+		<copy todir="${build.dir}">
+			<fileset dir="${src.dir}" includes="**/*.properties" />
+		</copy>
+		<javac destdir="${build.dir}" source="1.6" target="1.6" debug="true" deprecation="false" optimize="false" failonerror="true">
+			<src path="${src.dir}" />
+			<classpath refid="master-classpath" />
+		</javac>
+	</target>
+
+	<target name="deploy" depends="build" description="Deploy application">
+		<copy todir="${deploy.path}/${name}" preservelastmodified="true">
+			<fileset dir="${web.dir}">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="deploywar" depends="build" description="Deploy application as a WAR file">
+		<war destfile="${name}.war" webxml="${web.dir}/WEB-INF/web.xml">
+			<fileset dir="${web.dir}">
+				<include name="**/*.*" />
+			</fileset>
+		</war>
+		<copy todir="${deploy.path}" preservelastmodified="true">
+			<fileset dir=".">
+				<include name="*.war" />
+			</fileset>
+		</copy>
+	</target>
+
+
+	<path id="classpath">
+		<fileset dir="${lib}">
+		  <include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="compile">
+		<mkdir dir="${bin}" />
+		<javac fork="yes" srcdir="${src.dir}" destdir="${bin}" source="1.6" target="1.6" debug="on" includeantruntime="true">
+			<classpath refid="classpath" />
+		</javac>
+	</target>
+
+	<taskdef resource="checkstyletask.properties" classpath="checkstyle-5.0/checkstyle-all-5.0.jar" />
+
+	<target name="checkstyle" description="Generates a report of code convention violations.">
+		<checkstyle config="checkstyle-5.0/CheckStyle_CodingStandard.xml" failureProperty="checkstyle.failure" failOnViolation="false">
+			<formatter type="xml" tofile="${checkstyle.reports}/checkstyle_report.xml" />
+			<fileset dir="${src.dir}/com" includes="**/*.java" />
+		</checkstyle>
+		<style in="${checkstyle.reports}/checkstyle_report.xml" out="${checkstyle.reports}/checkstyle_report.html" style="checkstyle-5.0/checkstyle-simple.xsl" />
+	</target>
+
+	<property name="findbugs.home" value="findbugs-1.3.8" />
+	<taskdef name="findbugs" classpath="findbugs-1.3.8/findbugs-ant.jar" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" />
+
+	<target name="findbugs">
+		<findbugs home="${findbugs.home}" output="html" outputFile="${findbug.reports}/findbugs_report.html" jvmargs="-Xms512M -Xmx750M ">
+			<sourcePath path="src/com" />
+			<class location="${build.dir}" />
+		</findbugs>
+	</target>
+
+	<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+		<classpath path="D:\ANT\lib" />
+	</taskdef>
+
+	<!-- Add the target -->
+	<target name="sonar">
+		<!-- list of mandatories Sonar properties -->
+		<property name="sonar.sources" value="${src.dir}" />
+
+		<!-- list of optional Sonar properties -->
+		<property name="sonar.projectName" value="OnlineShop" />
+		<property name="sonar.binaries" value="${build.dir}" />
+		<!--<property name="sonar.tests" value="./test" />-->
+		<property name="sonar.libraries" value="./${lib}" />
+		<property name="sonar.java.source" value="1.6" />
+		<property name="sonar.dynamicAnalysis" value="reuseReports" />
+		<property name="sonar.cobertura.reportPath" value="${reports.xml.dir}/index.html"/>
+
+		<sonar:sonar key="org.example:example" version="0.1-SNAPSHOT" xmlns:sonar="antlib:org.sonar.ant" />
+	</target>
+
+	<path id="cobertura.classpath">
+		<fileset dir="${cobertura.cp}">
+			<include name="*.jar" />
+			<include name="cobertura.jar" />
+		</fileset>
+		<fileset dir="${lib}">
+			<include name="**/*.jar" />
+			<include name="**/*.xml" />
+		</fileset>
+	</path>
+
+	<taskdef classpathref="cobertura.classpath" resource="tasks.properties" />
+	<target name="instrument" depends="compile">
+		<delete file="cobertura.ser" />
+		<delete dir="${instrumented.dir}" />
+		<delete dir="${reports.xml.dir}" />
+		<mkdir dir="${instrumented.dir}" />
+		<mkdir dir="${reports.xml.dir}" />
+		<cobertura-instrument todir="${instrumented.dir}" maxmemory="512M">
+			<ignore regex="org.apache.log4j.*" />
+			<fileset dir="${bin}">
+				<include name="**/*.class" />	
+			</fileset>
+		</cobertura-instrument>
+	</target>
+
+	 <target name="unit_tests" description="Execute all junit tests" depends="compile">
+		<junit fork="yes" failureProperty="test.failed"  printsummary="withOutAndErr">
+			<sysproperty key="net.sourceforge.cobertura.datafile" file="cobertura.ser" />
+			<classpath refid="classpath" />
+			<classpath location="${instrumented.dir}" />
+			<classpath location="${bin}" />
+			<classpath>
+				<fileset dir="${test.dir}" file="application-context.xml"></fileset>
+			</classpath>
+			<formatter type="xml" />
+			<test name="test.com.impetus.pizza.service.AllTest" todir="${reports.xml.dir}"/>
+		</junit>
+	</target> 
+
+	<!-- <target name="unit_test_reports">
+			<mkdir dir="${test.reports}" />
+			<junit fork="yes" printsummary="yes" haltonfailure="no">			
+				<classpath location="${instrumented.dir}" />
+				<classpath location="${bin}" />
+				<batchtest fork="yes" todir="${test.reports}">
+					<fileset dir="${bin}">
+						<include name="**/*Test.class" />
+					</fileset>
+				</batchtest>
+				<formatter type="xml" />
+				<classpath refid="cobertura.classpath" />
+			</junit>
+			<junitreport todir="${test.reports}">
+				<fileset dir="${test.reports}">
+					<include name="TEST-*.xml" />
+				</fileset>
+				<report todir="${test.reports}" />
+			</junitreport>
+		</target> -->
+
+	<target name="coverage-report" depends="unit_tests">
+		<cobertura-report format="html" destdir="${reports.xml.dir}" srcdir="${test.dir}" />
+	</target>
+
+	<!-- <target name="main" depends="clean,compile,instrument,unit_tests,coverage-report" />-->
+	<target name="main" depends="clean,checkstyle,findbugs,compile,instrument,unit_tests,coverage-report,sonar,deploy,deploywar" />
+</project>
